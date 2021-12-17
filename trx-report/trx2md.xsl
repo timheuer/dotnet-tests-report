@@ -84,7 +84,7 @@ Expand the following summaries for more details:
                       select="/trx:TestRun/trx:Results/trx:UnitTestResult[@testId=$testId]" />
         <xsl:variable name="testOutcomeIcon">
             <xsl:choose>
-                <xsl:when test="$testResult/@outcome = 'Passed'">:heavy_check_mark:</xsl:when>
+                <xsl:when test="$testResult/@outcome = 'Passed'">:white_check_mark:</xsl:when>
                 <xsl:when test="$testResult/@outcome = 'Failed'">:x:</xsl:when>
                 <xsl:when test="$testResult/@outcome = 'NotExecuted'">:radio_button:</xsl:when>
                 <xsl:otherwise>:grey_question:</xsl:otherwise>
